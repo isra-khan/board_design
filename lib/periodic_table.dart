@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 
-/// A very simple Periodic Table layout (grid with element symbols).
-/// This is a simplified example: it places elements in approximate groups/periods,
-/// but not all advanced spacing is included.
 class PeriodicTable extends StatelessWidget {
   final double cellSize;
 
@@ -10,7 +7,6 @@ class PeriodicTable extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Simplified list of element symbols row by row (empty = gap)
     final table = [
       ["H", "", "", "", "", "", "", "", "", "", "", "", "", "", "He"],
       [
@@ -71,7 +67,6 @@ class PeriodicTable extends StatelessWidget {
         "Br",
         "Kr",
       ],
-      // ... can extend for full periodic table
     ];
 
     return SingleChildScrollView(
@@ -109,7 +104,6 @@ class PeriodicTable extends StatelessWidget {
   }
 }
 
-// Example app to display the Periodic Table
 void main() {
   runApp(const PeriodicTableDemoApp());
 }
